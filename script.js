@@ -41,7 +41,7 @@ filterButtons.forEach(button => {
 
     const filter = button.dataset.filter;
     projectCards.forEach(card => {
-      const categories = (card.dataset.category || "").split(/\\s+/);
+      const categories = (card.dataset.category || "").split(/\s+/);
       card.classList.toggle("hidden", filter !== "all" && !categories.includes(filter));
     });
   });
