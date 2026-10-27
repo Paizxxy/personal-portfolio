@@ -78,3 +78,36 @@ main, section { min-width: 0; }
   .skill-list { grid-template-columns: minmax(0, 1fr); }
   .section-wrap { padding-left: 5vw; padding-right: 5vw; }
 }
+
+
+/* FINAL FIX: enforce readable portfolio typography and contrast */
+html, body, body * {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+body {
+  color: #f4f7ff !important;
+  background-color: #05080f !important;
+}
+body h1, body h2, body h3, body h4, body b, body strong,
+body .brand, body .hero-subtitle, body .project-card h3,
+body .focus-row b, body .skill b, body .section-label,
+body .section-label span, body .project-meta {
+  color: #f4f7ff !important;
+}
+body p, body small, body .hero-text, body .about-copy,
+body .section-heading p, body .skills-head p, body .skill small,
+body .focus-row small, body .skills-note, body .contact-content p,
+body .footer {
+  color: #a5b5cb !important;
+}
+body a { color: #8bbcff !important; }
+body .button.primary, body .filter.active { color: #ffffff !important; }
+body .nav-links a, body .brand, body .project-link, body .text-link {
+  color: #a9caff !important;
+}
+body .project-card, body .skill {
+  color: #f4f7ff !important;
+}
+@media (max-width: 800px) {
+  body .nav-links { background: #080f1b !important; }
+}
